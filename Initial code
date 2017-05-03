@@ -1,1 +1,45 @@
+ {   //BACK GROUND IS WHITE, ELLIPSE IS BLACK, TRIANGLE IS BLUE FOR DEFAULT
+        fill(0, 0, 0);
+        ellipse(200, 200, 375, 375);
+        fill(60, 0, 255);
+        triangle(200, 104, 280, 280, 120, 280);
+    
+        var answer = random(-1, 7);}// GENERATES RANDOM NUMBER BETWEEN -1 AND 7 FOR THE                VARIABLE CALLED ANSWER
+
+    if (answer <= 0) {// IF NUMBER DRAWN IS LESS THAN OR EQUAL TO 0 "NOT LIKELY" IS DISPLAYED
+        fill(237, 40, 40);
+        text("NOT", 188, 200);
+        text("LIKELY", 181, 230);
+    } 
+    else if ( answer > 0 && answer < 2){// IF NUMBER DRAWN IS 1 "COMEBACK LATER" IS DISPLAYED
+        fill(255,255,255);
+        triangle(200, 104, 280, 280, 120, 280);
+        fill(247, 17, 17);
+        text("COME BACK", 166, 200);
+        text("LATER", 179, 230);}
+    else if ( answer > 1 && answer < 3){//IF NUMBER DRAWN IS 2"PLAUSIBLE" WILL BE DISPLAYED
+        fill(18, 204, 28);
+        triangle(200, 104, 280, 280, 120, 280);
+        fill(204, 34, 196);
+        text("PLAUSIBLE", 167, 215);}
+    else if( answer > 2 && answer < 4){//IF NUMBER 3 IS DRAWN "YES" WILL BE DISPLAYED
+        fill(230, 173, 30);
+        triangle(200, 104, 280, 280, 120, 280);
+        fill(8, 8, 8);
+        text("YES", 187,223);}
+        
+    else if( answer > 3 && answer < 5){//IF NUMBER 4 IS DRAWN "KEEP TRYING" WILL BE DISPLAYED
+        fill(27, 245, 201);
+        triangle(200, 104, 280, 280, 120, 280);
+        fill(217, 31, 195);
+        text("KEEP TRYING", 159,233);}
+        
+    else {
+        fill(0, 0, 0);
+        ellipse(200, 200, 375, 375);
+        fill(60, 0, 255);
+        triangle(200, 104, 280, 280, 120, 280);
+        fill(255, 255, 255);
+        text("N0", 192, 208);
+        text("CONCLUSIONS", 158, 248);}// ALL OTHER NUMBERS RETURN "NO CONCLUSIONS" AND DEFAULT         FILL COLORS
 
